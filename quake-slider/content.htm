@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    
+<!--    <link href="css/demo.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/quake.slider-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+			
+            $('.quake-slider').quake({ 
+				frameWidth:440,
+				frameHeight:100,//默认宽高 100 *100
+//				animationSpeed:1000,//动画效果持续时间
+//				pauseTime:2000,//停留时间，默认4秒
+				thumbnails: false,//是否启用缩略图 默认 ture
+//                captionOpacity: '0.5',//标题背景透明度
+                hasNextPrev:false,//是否有左右切换按钮 默认ture
+          
+
+            });
+
+
+
+        });
+    </script>
+    </head>
+    <body>
+
+      
+      <div class="quake-slider">
+<!--
+       quake-slider下包含两个部分quake-slider-images (目标图片)、quake-slider-captions(说明文字、标题)
+       		-<div>quake-slider
+       			---------<div>quake-slider-images 该div下的img会与caption一一对应
+       				---------<img>目标图片 
+       			---------<div>quake-slider-captions
+       				---------<div>quake-slider-caption说明文字所在的div
+-->
+       		
+        <div class="quake-slider-images"> 
+        	<img src="images/1.jpg" alt="" /> 
+        	<img src="images/2.jpg" alt="" />
+        	<img src="images/3.jpg" alt="" /> 
+        	<img src="images/4.jpg" alt="" /> 
+        	<img src="images/5.jpg" alt="" /> 
+        	<img src="images/6.jpg" alt="" /> 
+        	<img src="images/7.jpg" alt="" /> 
+        	<img src="images/8.jpg" alt="" /> 
+        </div>
+
+  
+      </div>
+
+</body>
+</html>
